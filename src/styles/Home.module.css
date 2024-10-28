@@ -1,0 +1,85 @@
+.body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.homeContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.6; 
+}
+
+.backgroundVideo iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.content {
+  z-index: 1;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+button {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #e50914; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f40612;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+}

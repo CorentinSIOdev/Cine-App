@@ -9,7 +9,7 @@
     "@types/react-dom": "^18.3.0",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.7.7",
-    "electron": "^32.1.2",
+    "dotenv": "^16.4.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -20,14 +20,21 @@
     "web-vitals": "^2.1.4"
   },
   "babel": {
-    "presets": ["react-app"],
-    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
   },
+  "main": "main.js",
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron ."
   },
   "jest": {
     "preset": "ts-jest",
@@ -70,6 +77,7 @@
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.14",
     "@types/uuid": "^10.0.0",
+    "electron": "^33.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
